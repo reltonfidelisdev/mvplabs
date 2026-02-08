@@ -1,8 +1,8 @@
-# MVPLab 🚀
+# MVP Labs 🚀
 
 **Aprenda programando. Prove com código real.**
 
-PlugaLab é uma plataforma educacional prática que conecta **aprendizado técnico** com **experiência real em projetos reais**, usando o GitHub como prova pública de competência.
+MVP Labs é uma plataforma educacional prática que conecta **aprendizado técnico** com **experiência real em projetos reais**, usando o GitHub como prova pública de competência.
 
 Aqui, participantes não recebem apenas certificados.  
 Eles constroem **histórico real de contribuição**, com Pull Requests revisados e aprovados.
@@ -25,7 +25,7 @@ O problema não é falta de estudo.
 
 ## 💡 A Solução
 
-O PlugaLab oferece:
+O MVP Labs oferece:
 
 - Trilhas práticas de aprendizado
 - Projetos reais em produção

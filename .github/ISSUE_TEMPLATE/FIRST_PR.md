@@ -35,85 +35,53 @@ Clique em **Fork** no topo do repositório.
 ```bash
 git clone https://github.com/seu-usuario/plugalab-landing.git
 cd plugalab-landing
-
+```
 ---
+4️⃣ Crie uma Branch
+```bash
+git checkout -b minha-primeira-contribuicao
+```
+5️⃣ Faça sua alteração
 
-************************************
-## **4️⃣ ISSUE TUTORIAL — “SEU PRIMEIRO PR”**
+Edite os arquivos necessários
 
-Essa issue é **o coração educacional do projeto**.
+Teste localmente
 
-### 🧩 ISSUE #0 — Seu Primeiro Pull Request
+Mantenha o código simples
 
-**Título:**  
-`[TUTORIAL] Faça seu primeiro Pull Request no PlugaLab`
+6️⃣ Commit
+```bash
+git add .
+git commit -m "Descrição clara da contribuição"
+```
 
-**Labels:**  
-`good first issue` · `beginner` · `plugalab-experience`
+7️⃣ Push
+```bash
+git push origin minha-primeira-contribuicao
+```
 
----
+8️⃣ Abra o Pull Request
 
-### 📋 **Descrição**
-Esta issue foi criada para ajudar novos participantes a realizarem
-seu **primeiro Pull Request em um projeto real**.
+Preencha o template
 
-Não é necessário experiência prévia.
+Explique o que você fez
 
----
+Aguarde o review
 
-### 🎯 **Objetivo**
-- Ensinar o fluxo básico de contribuição no GitHub
-- Familiarizar o participante com PRs e code review
-- Gerar experiência real comprovada
+🏅 Importante
 
----
+Seu PR aprovado:
 
-### ✅ **Tarefas**
-1. Fazer um fork do repositório
-2. Clonar o projeto localmente
-3. Criar uma branch
-4. Realizar uma pequena melhoria (exemplo abaixo)
-5. Abrir um Pull Request seguindo o template
+fica registrado no GitHub
 
----
+conta como experiência real
 
-### 💡 **Sugestões de contribuição**
-Escolha **uma**:
-- Corrigir um texto da landing page
-- Ajustar espaçamento ou cor no CSS
-- Melhorar responsividade em mobile
-- Melhorar acessibilidade (labels, contraste)
+pode ser usado no seu currículo
 
----
+Errar faz parte do processo.
+Aprender é o objetivo.
 
-### 📌 **Observações**
-- Não tenha medo de errar
-- O review será construtivo
-- O objetivo é aprender
-- PRs aprovados contam para o selo PlugaLab
+💬 Precisa de ajuda?
 
----
-
-## 🧠 O QUE VOCÊ CONSTRUIU (visão sênior)
-Agora o PlugaLab tem:
-
-- governança completa
-- onboarding de iniciantes
-- funil educacional
-- validação técnica real
-- diferencial competitivo
-- impacto social + produto
-
-Isso **não é um projeto comum**.  
-É uma **plataforma de formação baseada em realidade**.
-
----
-
-## 🚀 Próximo passo (opcional, mas poderoso)
-Se quiser, no próximo passo eu posso:
-- criar o **modelo do selo verificável**
-- desenhar o **backend mínimo**
-- criar o **roadmap público**
-- montar o **pitch para escolas**
-
-👉 Você manda.
+Abra uma Issue ou comente no PR.
+Estamos aqui para aprender juntos.

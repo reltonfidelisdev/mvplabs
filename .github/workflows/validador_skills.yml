@@ -1,0 +1,28 @@
+name: 🏆 Recife Labs Skill Validator
+
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  validate:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Verificar Labels de Skills
+        run: |
+          LABELS=$(echo '${{ toJson(github.event.pull_request.labels.*.name) }}')
+          ALUNO="${{ github.event.pull_request.user.login }}"
+          
+          echo "Processando skills para o aluno: $ALUNO"
+          
+          if [[ $LABELS == *"skill:iot"* ]]; then
+            echo "::notice title=Skill Validada!::O aluno $ALUNO agora possui proficiência comprovada em IoT/ESP32."
+          fi
+          
+          if [[ $LABELS == *"skill:frontend"* ]]; then
+            echo "::notice title=Skill Validada!::O aluno $ALUNO agora possui proficiência comprovada em Frontend."
+          fi

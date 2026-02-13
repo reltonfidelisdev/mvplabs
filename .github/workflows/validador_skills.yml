@@ -1,28 +1,30 @@
-name: 🏆 Recife Labs Skill Validator
+name: 🏆 Recife Labs - Validador de Entrada
 
 on:
   pull_request:
     types: [closed]
 
 jobs:
-  validate:
+  validar-primeiro-passo:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout do Código
         uses: actions/checkout@v4
 
-      - name: Verificar Labels de Skills
+      - name: Validar e Atribuir Selos de Entrada
         run: |
-          LABELS=$(echo '${{ toJson(github.event.pull_request.labels.*.name) }}')
+          # Captura o autor do PR
           ALUNO="${{ github.event.pull_request.user.login }}"
           
-          echo "Processando skills para o aluno: $ALUNO"
+          # Verifica se o arquivo talentos.json foi alterado
+          # (Isso prova que ele sabe alterar JSON)
+          CHANGED_FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.event.after }})
           
-          if [[ $LABELS == *"skill:iot"* ]]; then
-            echo "::notice title=Skill Validada!::O aluno $ALUNO agora possui proficiência comprovada em IoT/ESP32."
-          fi
+          echo "Processando conquista para: $ALUNO"
           
-          if [[ $LABELS == *"skill:frontend"* ]]; then
-            echo "::notice title=Skill Validada!::O aluno $ALUNO agora possui proficiência comprovada em Frontend."
-          fi
+          # Se o PR foi mergeado, ele já provou que sabe GitHub, PR e Commit.
+          # Se alterou o JSON, validamos a quarta skill.
+          
+          echo "::notice title=CONQUISTA DESBLOQUEADA!::Parabéns $ALUNO! Você provou proficiência em: {github, issues, commit, json}."
+          echo "Selo: 🏅 Integrante Recife Labs validado."

@@ -1,0 +1,10 @@
+{
+  "alunos": [
+    {
+      "nome": "Recife Labs Bot",
+      "escola": "Escola Técnica Estadual",
+      "serie": "3º Ano",
+      "username_github": "recifelabs"
+    }
+  ]
+}
